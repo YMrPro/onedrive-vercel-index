@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 const siteConfig = require('./config/site.config')
 
 module.exports = {
+  darkMode: 'class', // Enable dark mode via the 'class' strategy
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
@@ -40,4 +41,4 @@ module.exports = {
   plugins: [
     require('@tailwindcss/line-clamp'),
   ],
-}
+};
